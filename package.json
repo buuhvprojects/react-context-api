@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "buuhvprojects-react-native-context-api.podspec",
+    "buuhvprojects/react-native-context-api.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -38,13 +38,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/buuhvprojects/buuhvprojects-react-native-context-api",
+  "repository": "https://github.com/buuhvprojects/buuhvprojects/react-native-context-api",
   "author": "BuuhV Projects <github@buuhv.com> (https://github.com/buuhvprojects)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buuhvprojects/buuhvprojects-react-native-context-api/issues"
+    "url": "https://github.com/buuhvprojects/buuhvprojects/react-native-context-api/issues"
   },
-  "homepage": "https://github.com/buuhvprojects/buuhvprojects-react-native-context-api#readme",
+  "homepage": "https://github.com/buuhvprojects/buuhvprojects/react-native-context-api#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
