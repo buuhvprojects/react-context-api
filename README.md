@@ -14,11 +14,9 @@ npm install @buuhvprojects/react-context-api
 import ContextAPI, { combineReducers } from '@buuhvprojects/react-context-api';
 import { Store } from './interfaces';
 import { systemProvider } from './stores/system';
-import { themeProvider } from './stores/theme';
 
 const reducers = combineReducers({
-    system: systemProvider,
-    theme: themeProvider,
+    system: systemProvider
 });
 export const contextApi = new ContextAPI(reducers);
 
@@ -48,6 +46,46 @@ export const systemProvider = (state = systemStore, action?: ActionProvider) => 
     return ContextAPI.providerResult(state, action);
 };
 export default systemStore;
+
+```
+
+### Interface
+
+```js
+import systemStore from './stores/system';
+export interface DispatchParams {
+    field: string;
+    reducer: string;
+    payload: any;
+}
+export interface Store {
+    dispatch: (data: DispatchParams) => void;
+    store: {
+        system: typeof systemStore;
+    };
+}
+export interface ContextDispatchAction<T> {
+    reducer: T;
+    field: string;
+    payload: any;
+}
+export type StoresKeys = 'system';
+
+```
+
+### Provider
+
+```js
+function App(): JSX.Element {
+    return (
+        <NavigationContainer ref={navigationRef}>
+            <Provider value={contextApi.providerValues}>
+                {/*YOUR COMPONENT HERE*/}
+            </Provider>
+        </NavigationContainer>
+    );
+}
+export default App;
 
 ```
 
