@@ -1,7 +1,7 @@
 {
-  "name": "@buuhvprojects/react-native-context-api",
+  "name": "react-native-context-api",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Controla o context-api do react",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
