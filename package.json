@@ -1,7 +1,7 @@
 {
   "name": "react-context-api",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Controla o context-api do react",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
