@@ -1,17 +1,17 @@
-# @buuhvprojects/react-context-api
+# react-native-context-api
 
 Controla o context-api do react
 
 ## Installation
 
 ```sh
-npm install @buuhvprojects/react-context-api
+npm install react-native-context-api
 ```
 
 ## Usage
 
 ```js
-import ContextAPI, { combineReducers } from '@buuhvprojects/react-context-api';
+import ContextAPI, { combineReducers } from 'react-native-context-api';
 import { Store } from './interfaces';
 import { systemProvider } from './stores/system';
 
@@ -36,7 +36,7 @@ export { Provider, Consumer, useContextApi };
 ### Store
 
 ```js
-import ContextAPI, { ActionProvider } from '@buuhvprojects/react-context-api';
+import ContextAPI, { ActionProvider } from 'react-native-context-api';
 
 const systemStore = {
     loading: true
