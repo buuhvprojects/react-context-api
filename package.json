@@ -1,5 +1,5 @@
 {
-  "name": "react-native-context-api",
+  "name": "@buuhvprojects/react-context-api",
   "private": false,
   "version": "1.0.1",
   "description": "Controla o context-api do react",
