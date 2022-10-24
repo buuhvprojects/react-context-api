@@ -37,7 +37,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "context-api",
+    "context api"
   ],
   "repository": "https://github.com/buuhvprojects/react-native-context-api",
   "author": "BuuhV Projects <github@buuhv.com> (https://github.com/buuhvprojects)",

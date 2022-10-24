@@ -1,4 +1,4 @@
-# @buuhvprojects/react-native-context-api
+# @buuhvprojects/react-context-api
 
 Controla o context-api do react
 
@@ -33,6 +33,22 @@ const Provider = contextApi.Provider;
 const Consumer = contextApi.Consumer;
 
 export { Provider, Consumer, useContextApi };
+```
+
+### Store
+
+```js
+import ContextAPI, { ActionProvider } from '@buuhvprojects/react-context-api';
+
+const systemStore = {
+    loading: true
+};
+
+export const systemProvider = (state = systemStore, action?: ActionProvider) => {
+    return ContextAPI.providerResult(state, action);
+};
+export default systemStore;
+
 ```
 
 ## Contributing
