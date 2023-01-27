@@ -1,5 +1,5 @@
 {
-  "name": "react-context-api",
+  "name": "@buuhvprojects/react-context-api",
   "private": false,
   "version": "1.1.0",
   "description": "Controla o context-api do react",
