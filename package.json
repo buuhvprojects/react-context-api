@@ -1,5 +1,5 @@
 {
-  "name": "react-native-context-api",
+  "name": "react-context-api",
   "private": false,
   "version": "1.0.7",
   "description": "Controla o context-api do react",
@@ -11,10 +11,6 @@
   "files": [
     "src",
     "lib",
-    "android",
-    "ios",
-    "cpp",
-    "buuhvprojects/react-native-context-api.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -41,13 +37,13 @@
     "context-api",
     "context api"
   ],
-  "repository": "https://github.com/buuhvprojects/react-native-context-api",
+  "repository": "https://github.com/buuhvprojects/react-context-api",
   "author": "BuuhV Projects <github@buuhv.com> (https://github.com/buuhvprojects)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buuhvprojects/react-native-context-api/issues"
+    "url": "https://github.com/buuhvprojects/react-context-api/issues"
   },
-  "homepage": "https://github.com/buuhvprojects/react-native-context-api#readme",
+  "homepage": "https://github.com/buuhvprojects/react-context-api#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
