@@ -1,17 +1,17 @@
-# react-native-context-api
+# react-context-api
 
-Controla o context-api do react
+Controla o context-api do react. Funciona para React Native.
 
 ## Installation
 
 ```sh
-npm install react-native-context-api
+npm install react-context-api
 ```
 
 ## Usage
 
 ```js
-import ContextAPI, { combineReducers } from 'react-native-context-api';
+import ContextAPI, { combineReducers } from 'react-context-api';
 import { Store } from './interfaces';
 import { systemProvider } from './stores/system';
 
@@ -36,13 +36,13 @@ export { Provider, Consumer, useContextApi };
 ### Store
 
 ```js
-import ContextAPI, { ActionProvider } from 'react-native-context-api';
+import ContextAPI, { ActionProvider } from 'react-context-api';
 
 const systemStore = {
     loading: true
 };
 
-export const systemProvider = (state = systemStore, action?: ActionProvider) => {
+export const systemProvider = (state = systemStore, action?: ActionProvider|ActionProvider[]) => {
     return ContextAPI.providerResult(state, action);
 };
 export default systemStore;
