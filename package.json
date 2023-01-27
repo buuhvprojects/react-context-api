@@ -28,7 +28,8 @@
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods",
     "push": "git add . && git commit -m \"General Fixs\" && git push",
-    "clean": "rm -rf yarn.lock node_modules"
+    "clean": "rm -rf yarn.lock node_modules",
+    "changelog": "standard-version"
   },
   "keywords": [
     "react-native",
