@@ -119,10 +119,24 @@ class ContextAPI {
     if (action.type === 'all') {
       return action.data;
     } else if (state.hasOwnProperty(action.type)) {
-      return {
-        ...state,
-        [action.type]: action.data,
-      };
+      //Se action.type for separado por ponto, ele irá separar e criar um objeto
+      const split = action.type.split('.');
+      if (split.length > 1) {
+        let prev: any = {};
+        prev[split[1]] = action.data;
+        return {
+          ...state,
+          [split[0]]: {
+            ...state[split[0]],
+            ...prev,
+          },
+        };
+      } else {
+        return {
+          ...state,
+          [action.type]: action.data,
+        };
+      }
     } else {
       return state;
     }
